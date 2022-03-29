@@ -7,5 +7,6 @@ whereがないと<strong>全件</strong>更新してしまう。
 DELETE<br>
 FROM...<br>
 [WHERE]...<br>
-whereがないと<strong>全件</strong>削除してしまう
+whereがないと<strong>全件</strong>削除してしまう<br>
+<strong><></strong> 左右が等しくない
 
