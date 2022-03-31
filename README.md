@@ -1,6 +1,6 @@
 # SQL
-UPDATE ...<br>
-SET...<br>
+UPDATE ...テーブル名<br>
+SET...列名<br>
 [WHERE]...<br>
 whereがないと<strong>全件</strong>更新してしまう。
 
