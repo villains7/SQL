@@ -17,6 +17,9 @@ whereがないと<strong>全件</strong>削除してしまう<br>
   ORDER BY 列名　LIMIT 1 OFFSET 2<br>
   （OFFSETは先頭から除外する行数）<br>
 LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
+  ## 列番号指定の並び替え
+  * まず入金額で並び替え、同じ額については出金額で並び替え
+  SELECT入金額,出金額　FROM 家計簿　ORDER BY 1 DESC
   
   ## 和集合
   SELECT  文1
