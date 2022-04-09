@@ -37,6 +37,17 @@ LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   同じ意味の演算子：NOT IN と　<>ALL 全ての値と一致しない<br>
   同じ意味の演算子IN と　=ANY いずれかの値と一致することを判定<br>
   文字列の|| 連結
+  ## CASE 演算子
+  railsでいうifみたいなもの<br>
+  EX)費目に応じて変換<br>
+  SELECT 費目, 出金額,<br>
+    CASE 費目　WHEN '居住費'　THEN '固定費'<br>
+  　　　　　WHEN　’水道光熱費’　THEN ’固定費’<br>
+  　　　　　ELSE ’変動費’<br>
+  END AS　出費の分類<br>
+  FROM 家計簿　WHERE 出金額　0
+  　　　　
+  
   
   ## テーブルの削除
   DROP TABLE テーブル
