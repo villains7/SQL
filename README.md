@@ -28,9 +28,9 @@ LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   SELECT入金額,出金額　FROM 家計簿　ORDER BY 1 DESC
   
   ## 和集合
-  SELECT  文1
-  　UNION (ALL)
-  SELECT 文2
+  SELECT  文1<br>
+  　UNION (ALL)<br>
+  SELECT 文2<br>
   複数のテーブルから情報を取ってくる特
   
   ## 演算子
