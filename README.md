@@ -14,7 +14,9 @@ whereがないと<strong>全件</strong>削除してしまう<br>
 
 ## 文字列の一部を抽出する関数
 EX)口座テーブルから名義の1〜5文字目に「カワ」が含まれる<br>
-SELECT * FROM 口座　WHERE SUBSTRING (名義,1,5)LIKE　’％カワ％’
+SELECT * <br>
+FROM 口座　<br>
+WHERE SUBSTRING (名義,1,5)LIKE　’％カワ％’
   
   
   
