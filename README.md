@@ -26,8 +26,10 @@ WHERE SUBSTRING (名義,1,5)LIKE　’％カワ％’
   （OFFSETは先頭から除外する行数）<br>
 LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   ## 列番号指定の並び替え
-  * まず入金額で並び替え、同じ額については出金額で並び替え
-  SELECT入金額,出金額　FROM 家計簿　ORDER BY 1 DESC
+  まず入金額で並び替え、同じ額については出金額で並び替え<br>
+  SELECT入金額,出金額　FROM 家計簿　ORDER BY 1 DESC<br>
+  3列目で並び替え、3列目の数字が同じ場合は1列目で並び替える<br>
+  ORDER BY 3、1
   
   ## 和集合
   SELECT  文1<br>
