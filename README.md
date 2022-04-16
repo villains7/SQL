@@ -72,6 +72,8 @@ LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   CAST (変換する値　AS 変換するデータ型)
   * TRUNC関数……指定行で切り捨てる関数<br>
   TRUNC(数値を表す列, 有効とする桁数)
+  * CURRENT_DATE……現在の日付を表す
+  * CURRENT_TIME……現在の時間を表す
   ## テーブルの結合
   SELECT 選択列リスト<br>
   FROM テーブルA<br>
