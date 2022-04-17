@@ -74,6 +74,9 @@ LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   TRUNC(数値を表す列, 有効とする桁数)
   * CURRENT_DATE……現在の日付を表す
   * CURRENT_TIME……現在の時間を表す
+  * COALESCE関数<br>
+  COALESCE（引数1,引数2）……引数のうち最初に現れたNULLでない引数<br>
+  NULLの場合の代替の値を入れるときに使うことが多いかも
   ## テーブルの結合
   SELECT 選択列リスト<br>
   FROM テーブルA<br>
