@@ -25,9 +25,11 @@ WHERE SUBSTRING (名義,1,5)LIKE　’％カワ％’
   ORDER BY 列名　LIMIT 1 OFFSET 2<br>
   （OFFSETは先頭から除外する行数）<br>
 LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
+  
   ## 並び替え
   ①で昇順、②で降順の場合<br>
-  ORDER BY ①,②
+  ORDER BY ①,②desc
+  
   ## 列番号指定の並び替え
   まず入金額で並び替え、同じ額については出金額で並び替え<br>
   SELECT入金額,出金額　FROM 家計簿　ORDER BY 1 DESC<br>
