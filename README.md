@@ -28,11 +28,8 @@ WHERE SUBSTRING (名義,1,5)LIKE　’％カワ％’
 ### 文字列の置き換え
 (REPLACE(名義,' ',''))空白をなしにする
 
-
   
-  
-  
-  ## 3番目に高いものを取得
+## 3番目に高いものを取得
   SELECT 列名　　FROM テーブル名<br>
   ORDER BY 列名　LIMIT 1 OFFSET 2<br>
   Q.11番目は…？？<br>
@@ -72,9 +69,14 @@ LENGTH (TRIM(000000)-1,2) -1は000000の後ろから1文字目ということ
   END AS　出費の分類<br>
   FROM 家計簿　WHERE 出金額　0
   ## IN演算子
-  IN 演算子で複数の値リストと比較
+  IN 演算子で複数の値リストと比較<br>
 　　　　WHERE 00 IN（値,値,値）
-  　　　　
+  
+  
+  ## 集計関数
+  条件式を用いずにCOUNTする<br>
+  EX) SELECT　COUNT（*） - COUNT(更新日) AS 更新日が登録されていない件数<br>
+  FROM　口座
   
   
   ## テーブルの削除
