@@ -17,6 +17,10 @@ whereがないと<strong>全件</strong>削除してしまう<br>
 
 ## 文字列関係
 ### 文字列の一部抽出
+EX) 口座テーブルから更新日を抽出、更新日の形式を変える2021-01-01から2021年1月1日に<br>
+SELECT SUBSTRING(CAST（更新日 AS VARCHAR）,1,4)|| '年'　|| SUBSTRING(CAST(更新日 AS VARCHAR),6,2)||'月'　SUBSTRING(CAST（更新日　AS VARCHAR）,9,2） || '日' AS 更新日<br>
+FROM 口座
+
 EX)口座テーブルから名義の1〜5文字目に「カワ」が含まれる<br>
 SELECT * <br>
 FROM 口座　<br>
